@@ -1,3 +1,4 @@
+import { Text } from '@angular/compiler/src/i18n/i18n_ast';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'assignment02';
+  userName = '' ;
+  emptyString = '';
+
+
+  onCanPressOnlyWhen() {
+    this.userName = this.emptyString
+  }
 }
